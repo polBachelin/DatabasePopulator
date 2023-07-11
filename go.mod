@@ -1,4 +1,4 @@
-module github.com/polBachelin/DatabasePopulator
+module github.com/polBachelin/database-populator
 
 go 1.20
 

@@ -11,12 +11,13 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "DatabasePopulator",
+	Use:   "blockclt",
 	Short: "Populate any mongoDB database with the number of documents and structure",
 	Long: `DatabasePopulator is a CLI library for Go that helps developers
-	populate any mongoDB with as many documents as they want.
-	This application is a tool to generate large quantities of documents for
-	testing tools on local databases. The values of the generated documents can be specified by flags`,
+
+populate any mongoDB with as many documents as they want.
+This application is a tool to generate large quantities of documents for
+testing tools on local databases. The values of the generated documents can be specified by flags`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
