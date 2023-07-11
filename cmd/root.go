@@ -15,7 +15,7 @@ var rootCmd = &cobra.Command{
 	Short: "Populate any mongoDB database with the number of documents and structure",
 	Long: `DatabasePopulator is a CLI library for Go that helps developers
 	populate any mongoDB with as many documents as they want.
-	This application is a tool to generate large documents for
+	This application is a tool to generate large quantities of documents for
 	testing tools on local databases`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
@@ -32,13 +32,5 @@ func Execute() {
 }
 
 func init() {
-	// Here you will define your flags and configuration settings.
-	// Cobra supports persistent flags, which, if defined here,
-	// will be global for your application.
-
-	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.DatabasePopulator.yaml)")
-
-	// Cobra also supports local flags, which will only run
-	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
