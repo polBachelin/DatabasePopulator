@@ -12,6 +12,8 @@ This application is a tool to generate large quantities of documents for testing
 ## Usage/Examples
 
 To use this CLI you need to provide some flags
+`database-populator generate --host localhost --pass pass12345 --user root --port 27017 --path /home/polo/Projects/dataDash/databasePopulator/examples --database test 10 Stories`
+The above command will generate 10 documents in the collection Stories for the database test following the schema Stories in the examples folder
 
 ### Database
 
