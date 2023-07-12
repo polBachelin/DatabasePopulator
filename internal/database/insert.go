@@ -1,10 +1,12 @@
 package database
 
-import "context"
+import (
+	"context"
+)
 
 func InsertDocuments(documents []interface{}, collectionName string) error {
 	collection := databaseConnection.db.Collection(collectionName)
 
-	_, err := collection.InsertOne(context.TODO(), documents)
+	_, err := collection.InsertMany(context.TODO(), documents)
 	return err
 }

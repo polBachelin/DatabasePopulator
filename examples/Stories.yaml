@@ -1,12 +1,12 @@
 blocks:
   - name: Stories
-  fields:
-    - name: category
-      type: string
-    - name: isDraft
-      type: boolean
-    - name: movie
-      type: object
-      fields:
-        - name: release_date
-          type: date
+    fields:
+      - name: category
+        type: string
+      - name: isDraft
+        type: boolean
+      - name: movie
+        type: object
+        fields:
+          - name: release_date
+            type: date

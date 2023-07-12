@@ -40,7 +40,7 @@ func generate(cmd *cobra.Command, args []string) {
 		return
 	}
 	database.ConnectDatabase(host, port, user, pass, databaseName)
-	for _, arg := range args[0:] {
+	for _, arg := range args[1:] {
 		block, err := schema.GetBlockFromName(arg, blocks)
 		if err != nil {
 			fmt.Fprintln(os.Stderr, "Error retreiving block: %v", err)
